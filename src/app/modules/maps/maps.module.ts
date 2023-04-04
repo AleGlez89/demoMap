@@ -15,7 +15,7 @@ import { ManciventModule } from '../mancivent/mancivent.module';
   imports: [
     CommonModule,
     AgmCoreModule.forRoot({
-      //apiKey: 'AIzaSyAeVs5kr4AKUOGoAdLMNlHDun9_0dyv0JA'
+      //apiKey: ''
       apiKey: ''
     }),    
     AgmMarkerClustererModule,
