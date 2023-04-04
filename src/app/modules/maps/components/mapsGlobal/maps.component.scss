@@ -1,0 +1,25 @@
+
+.centralContainer {
+    //padding: 20px;
+    //position: relative;   
+
+    .filterClientContainer {
+        height: 300px;
+        width: 50%;
+        margin: auto;
+        position: absolute;
+        top: 20%;
+        z-index: 100;
+        background: whitesmoke;
+        margin-left: 20px;
+    }
+
+    .mapContainer {
+        agm-map {
+            height: 850px;
+            //height: 100Vh;
+            //max-height: 600px;
+            //overflow: hidden;
+        }
+    }
+}

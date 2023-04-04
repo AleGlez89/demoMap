@@ -1,0 +1,34 @@
+<div class="login">
+    <body>    
+        <main class="form-signin">
+          <form [formGroup]="credentialByLogin">
+            <img class="formatimg" src="../../../../../assets/img/Logo-Mancivent-compuest.png">
+            <!--h1 class="formatText">Vueling Challenges</h1-->
+        
+            <div class="form-floating">
+              <input type="email" class="form-control"  formControlName="email" id="floatingInput" placeholder="name@example.com" >
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating">
+              <input type="password" class="form-control" formControlName="password" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="checkLogin()">Entrar</button>
+            <div class="warningLoginError" *ngIf="controlShowErrorLogin">
+                <span class="formatTextError">{{errorLoginSMS}}</span>
+            </div>
+            <p class="formatCipyRight">&copy; 2023 </p>
+          </form>
+        </main>
+    </body>
+</div>
+
+

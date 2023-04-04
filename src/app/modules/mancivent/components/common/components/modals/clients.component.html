@@ -1,0 +1,43 @@
+<ng-template #content let-modal>
+
+	<div class="modal-header" style="background-color: #186cad;">
+		<h4 class="modal-title" style="color: white;">Ficha del Cliente</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+
+	<div class="modal-body">
+		<div style="display: flex; justify-content: space-around">
+
+			<div style="display: flex; flex-direction: column;">
+				<span style=" color: black; font-weight: bold; font-size: large; margin-left: 50px;">Comercial</span>
+				<img src="../../../../../../assets/img//manager/1630961590798.jpeg" alt="" style="width: 200px; height: 200px;">
+
+			</div>
+
+			<div style="display: flex; flex-direction: column;">
+				<span style=" color: black; font-weight: bold; font-size: large;">Información</span>
+				<div style="display: flex; flex-direction: column;">
+					<span style="font-size: x-small; color: black; font-weight: bold; margin-top: 10px;">Correo de contacto: </span>
+					<span style="color: #186cad;">asasas@dsddfd.com </span>					
+					<span style="font-size: x-small; color: black; font-weight: bold; margin-top: 5px;">Servicios contratados: </span>
+					<span style="color: #186cad;">8 servicios</span>			
+					<span style="font-size: x-small; color: black; font-weight: bold; margin-top: 5px;">Direccion del cliente: </span>
+					<span style="color: #186cad;">Carrer del Progrés, 69 - C.C.</span>
+					<span style="font-size: x-small; color: black; font-weight: bold; margin-top: 5px;">Facturaciones realizadas: </span>
+					<span style="color: #186cad;">24 K </span>				
+					<!--span>Carrer del Progrés, 69 - C.C. 
+						Barnasud, Loc. B87, B14 </span-->
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="modal-footer" style="background-color: #186cad;">
+		<button type="button" class="btn btn-light" (click)="modal.close('Close click')" 
+		style="background-color: #ec740b; color: white; font-weight: bold;">Close</button>
+	</div>
+  
+</ng-template>

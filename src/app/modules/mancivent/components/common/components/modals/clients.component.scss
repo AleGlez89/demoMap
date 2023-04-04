@@ -1,0 +1,80 @@
+
+@mixin formatDefaultText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+   text-align: justify;
+}
+@mixin formatDefaultIcon {
+    cursor: pointer;
+    margin-left: 5px;
+}
+header{
+    .bg-edited-vueling{
+        background-color: #ffc107;
+        .containerHeader{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;           
+            .filterFormat{
+                input{
+                    margin-top: 6px;
+                    &::placeholder{
+                        color: #186cad;
+                        font-weight: 600;
+                        font-style: italic;
+                    }
+                }                
+            }
+            .exit{
+                @include formatDefaultIcon();
+                width: 38px;
+            }
+            .panelLeft{
+                .formatimg{
+                    width: 31%;
+                }
+            }
+            .panelRight{
+                display: flex;
+                margin-top: 13px;
+                .dashboard{
+                    @include formatDefaultIcon();
+                    width: 42px;
+                }  
+            }          
+        }
+    }
+    .ajustSize{
+        height: 855px;
+        .textAbout{
+            color: #ffc107;
+        }
+        .textVueling{
+            @include formatDefaultText();
+        }
+    }
+}
+//Responsive
+@media (min-height: 600px) { 
+    header{
+        .ajustSize{
+            height: 518px;
+        }
+    }
+}
+@media (min-height: 721px) { 
+    header{
+        .ajustSize{
+            height: 638px;
+        }
+    }
+}
+@media (min-height: 937px) { 
+    header{
+        .ajustSize{
+            height: 855px;
+        }
+    }
+}

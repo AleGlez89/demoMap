@@ -1,0 +1,31 @@
+
+<div class="core-mancivent">
+    <!--div class="sideBar">
+        <app-side-bar
+            [isExpanded]="sidebarExpanded" 
+            (toggleSidebar)="sidebarExpanded = !sidebarExpanded">
+        </app-side-bar>
+    </div-->
+    
+    <div class="container-components" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
+    
+        <div class="headerContainer">
+            <app-header
+                [allClients]="listClients">
+            </app-header>
+        </div>
+        
+        <div class="mapContainer">
+            <app-maps
+                [listClients]="listClients">
+            </app-maps>
+        </div>
+
+        <div
+        *ngIf="enabledManagementsClients"
+         class="manageClients">
+            <app-management-clients></app-management-clients>
+        </div>
+        
+    </div>
+</div>
